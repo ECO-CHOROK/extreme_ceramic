@@ -1,0 +1,119 @@
+<odoo>
+    <record id="view_sale_customer_reservation_tree" model="ir.ui.view">
+        <field name="name">sale.customer.reservation.tree</field>
+        <field name="model">sale.customer.reservation</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="sale_order_id"/>
+                <field name="partner_id"/>
+                <field name="amount_total"/>
+                <field name="amount_received_operational"/>
+                <field name="amount_due"/>
+                <field name="reservation_state"/>
+                <field name="reservation_date"/>
+                <field name="cancellation_date"/>
+                <field name="internal_picking_id"/>
+                <field name="cancellation_picking_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sale_customer_reservation_form" model="ir.ui.view">
+        <field name="name">sale.customer.reservation.form</field>
+        <field name="model">sale.customer.reservation</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="reservation_state" widget="statusbar" statusbar_visible="reserved,cancelled" readonly="1"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Reserved" bg_color="text-bg-success" invisible="reservation_state != 'reserved'"/>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="reservation_state != 'cancelled'"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_cash_in" type="object" class="oe_stat_button" icon="fa-money">
+                            <field name="cash_in_count" string="Cash Collections" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name" readonly="1"/>
+                            <field name="sale_order_id"/>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="currency_id" readonly="1"/>
+                            <field name="amount_total" readonly="1"/>
+                            <field name="amount_received_operational" readonly="1"/>
+                            <field name="amount_due" readonly="1"/>
+                            <field name="reservation_date" readonly="1"/>
+                            <field name="cancellation_date" readonly="1"/>
+                            <field name="internal_picking_id" readonly="1"/>
+                            <field name="cancellation_picking_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Cash Collections">
+                            <field name="cash_in_ids" context="{'default_sale_reservation_id': id, 'tree_view_ref': 'stock_customer_reservation_cash.view_reservation_cash_in_tree', 'form_view_ref': 'stock_customer_reservation_cash.view_reservation_cash_in_form'}">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                    <field name="payment_mode_id"/>
+                                    <field name="amount"/>
+                                    <field name="state"/>
+                                    <field name="account_payment_id"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_customer_reservation" model="ir.actions.act_window">
+        <field name="name">Customer Reservations</field>
+        <field name="res_model">sale.customer.reservation</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_sale_reservation_root"
+              name="Customer Reservations"
+              parent="sale.sale_menu_root"
+              sequence="95"
+              groups="stock_customer_reservation_cash.group_reservation_cash_user"/>
+
+    <!-- Force clear any legacy action bound to the root menu, so all submenus are shown -->
+    <record id="menu_sale_reservation_root" model="ir.ui.menu">
+        <field name="action" eval="False"/>
+    </record>
+
+    <menuitem id="menu_sale_customer_reservation"
+              name="Reservations"
+              parent="stock_customer_reservation_cash.menu_sale_reservation_root"
+              action="stock_customer_reservation_cash.action_sale_customer_reservation"
+              sequence="10"
+              groups="stock_customer_reservation_cash.group_reservation_cash_user"/>
+
+    <menuitem id="menu_sale_reservation_cash_in"
+              name="Cash Collections"
+              parent="stock_customer_reservation_cash.menu_sale_reservation_root"
+              action="stock_customer_reservation_cash.action_reservation_cash_in"
+              sequence="20"
+              groups="stock_customer_reservation_cash.group_reservation_cash_user"/>
+
+    <menuitem id="menu_sale_reservation_cash_config"
+              name="Configuration"
+              parent="stock_customer_reservation_cash.menu_sale_reservation_root"
+              sequence="90"
+              groups="stock_customer_reservation_cash.group_reservation_cash_manager"/>
+
+    <menuitem id="menu_sale_reservation_payment_mode"
+              name="Payment Modes"
+              parent="stock_customer_reservation_cash.menu_sale_reservation_cash_config"
+              action="stock_customer_reservation_cash.action_reservation_payment_mode"
+              sequence="10"
+              groups="stock_customer_reservation_cash.group_reservation_cash_manager"/>
+</odoo>

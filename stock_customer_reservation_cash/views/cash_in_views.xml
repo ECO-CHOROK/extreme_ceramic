@@ -1,0 +1,74 @@
+<odoo>
+    <record id="view_reservation_cash_in_tree" model="ir.ui.view">
+        <field name="name">reservation.cash.in.tree</field>
+        <field name="model">reservation.cash.in</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="sale_reservation_id"/>
+                <field name="sale_order_id"/>
+                <field name="partner_id"/>
+                <field name="payment_mode_id"/>
+                <field name="amount"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_reservation_cash_in_form" model="ir.ui.view">
+        <field name="name">reservation.cash.in.form</field>
+        <field name="model">reservation.cash.in</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" string="Confirm" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_to_account" string="Mark To Account" type="object" invisible="state != 'confirmed'"/>
+                    <button name="action_account" string="Account" type="object" class="btn-primary" invisible="state != 'to_account'" groups="stock_customer_reservation_cash.group_reservation_cash_manager"/>
+                    <button name="action_cancel" string="Cancel" type="object" invisible="state in ('cancelled', 'accounted')"/>
+                    <button name="action_reset_draft" string="Reset to Draft" type="object" invisible="state in ('draft', 'accounted')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,to_account,accounted,cancelled"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" readonly="1"/>
+                            <field name="sale_reservation_id" domain="[('reservation_state', '=', 'reserved')]"/>
+                            <field name="sale_order_id" readonly="1"/>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="payment_mode_id"/>
+                            <field name="is_cheque_lcn" invisible="1"/>
+                            <field name="cheque_lcn_date" invisible="not is_cheque_lcn" required="is_cheque_lcn"/>
+                            <field name="cheque_lcn_issuer" invisible="not is_cheque_lcn" required="is_cheque_lcn"/>
+                            <field name="cheque_lcn_number" invisible="not is_cheque_lcn" required="is_cheque_lcn"/>
+                            <field name="amount"/>
+                            <field name="currency_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="reference"/>
+                        <field name="attachment_ids" widget="many2many_binary"/>
+                    </group>
+                    <group>
+                        <field name="account_payment_id" readonly="1"/>
+                        <field name="account_move_id" readonly="1"/>
+                        <field name="accounting_date" readonly="1"/>
+                        <field name="accounted_by" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_reservation_cash_in" model="ir.actions.act_window">
+        <field name="name">Operational Cash Collections</field>
+        <field name="res_model">reservation.cash.in</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

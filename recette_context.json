@@ -1,0 +1,30 @@
+{
+  "tag": "BCREC1772104732",
+  "company_id": 1,
+  "product_tmpl_id": 496,
+  "product_id": 496,
+  "customer_id": 497,
+  "vendor_id": 498,
+  "sale_order_id": 8165,
+  "sale_order_name": "S01520",
+  "sale_picking_id": 1316,
+  "purchase_order_id": 13,
+  "purchase_order_name": "P00009",
+  "purchase_picking_id": 1317,
+  "internal_picking_id": null,
+  "batch_out_id": 135,
+  "batch_in_id": 136,
+  "group_id": 66,
+  "users": {
+    "usera": {
+      "id": 12,
+      "login": "bcrec1772104732.usera",
+      "password": "Test1234!"
+    },
+    "userb": {
+      "id": 13,
+      "login": "bcrec1772104732.userb",
+      "password": "Test1234!"
+    }
+  }
+}

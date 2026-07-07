@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <function model="sale.order" name="action_cleanup_legacy_stock_customer_reservation_menu"/>
+    </data>
+</odoo>
