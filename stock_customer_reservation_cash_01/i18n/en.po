@@ -1,0 +1,442 @@
+# Translation of Odoo Server.
+# Module: stock_customer_reservation_cash
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"POT-Creation-Date: 2026-03-01 23:55+0000\n"
+"PO-Revision-Date: 2026-03-01 23:55+0000\n"
+"Last-Translator: Build4Prod Bot\n"
+"Language-Team: English (US)\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Cash User"
+msgstr "Reservation Cash User"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Cash Manager"
+msgstr "Reservation Cash Manager"
+
+#. module: stock_customer_reservation_cash
+msgid "Cash in company"
+msgstr "Cash in company"
+
+#. module: stock_customer_reservation_cash
+msgid "Payment mode company"
+msgstr "Payment mode company"
+
+#. module: stock_customer_reservation_cash
+msgid "Sale reservation company"
+msgstr "Sale reservation company"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reservations"
+msgstr "Customer Reservations"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservations"
+msgstr "Reservations"
+
+#. module: stock_customer_reservation_cash
+msgid "Cash Collections"
+msgstr "Cash Collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: stock_customer_reservation_cash
+msgid "Payment Modes"
+msgstr "Payment Modes"
+
+#. module: stock_customer_reservation_cash
+msgid "Quotation Reservations"
+msgstr "Quotation Reservations"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Payment Modes"
+msgstr "Reservation Payment Modes"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reservation"
+msgstr "Customer Reservation"
+
+#. module: stock_customer_reservation_cash
+msgid "Delivery Validation"
+msgstr "Delivery Validation"
+
+#. module: stock_customer_reservation_cash
+msgid "Invoice to another contact"
+msgstr "Invoice to another contact"
+
+#. module: stock_customer_reservation_cash
+msgid "Contact"
+msgstr "Contact"
+
+#. module: stock_customer_reservation_cash
+msgid "Confirm"
+msgstr "Confirm"
+
+#. module: stock_customer_reservation_cash
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: stock_customer_reservation_cash
+msgid "Reserve"
+msgstr "Reserve"
+
+#. module: stock_customer_reservation_cash
+msgid "Collect Cash"
+msgstr "Collect Cash"
+
+#. module: stock_customer_reservation_cash
+msgid "Cancel Reservation"
+msgstr "Cancel Reservation"
+
+#. module: stock_customer_reservation_cash
+msgid "Mark To Account"
+msgstr "Mark To Account"
+
+#. module: stock_customer_reservation_cash
+msgid "Account"
+msgstr "Account"
+
+#. module: stock_customer_reservation_cash
+msgid "Reset to Draft"
+msgstr "Reset to Draft"
+
+#. module: stock_customer_reservation_cash
+msgid "Operational Cash Collections"
+msgstr "Operational Cash Collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Collected / Quotation"
+msgstr "Collected / Quotation"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation"
+msgstr "Reservation"
+
+#. module: stock_customer_reservation_cash
+msgid "Attachments"
+msgstr "Attachments"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reservation from Quotation"
+msgstr "Customer Reservation from Quotation"
+
+#. module: stock_customer_reservation_cash
+msgid "Operational Cash Collection"
+msgstr "Operational Cash Collection"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Payment Mode"
+msgstr "Reservation Payment Mode"
+
+#. module: stock_customer_reservation_cash
+msgid "Delivery Validation Wizard with Billing Contact"
+msgstr "Delivery Validation Wizard with Billing Contact"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reservation Location"
+msgstr "Customer Reservation Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reservations Parent Location"
+msgstr "Customer Reservations Parent Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Customer Reserved Location"
+msgstr "Customer Reserved Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Transfer Type"
+msgstr "Reservation Transfer Type"
+
+#. module: stock_customer_reservation_cash
+msgid "Release Transfer Type"
+msgstr "Release Transfer Type"
+
+#. module: stock_customer_reservation_cash
+msgid "Draft"
+msgstr "Draft"
+
+#. module: stock_customer_reservation_cash
+msgid "Confirmed"
+msgstr "Confirmed"
+
+#. module: stock_customer_reservation_cash
+msgid "To Account"
+msgstr "To Account"
+
+#. module: stock_customer_reservation_cash
+msgid "Accounted"
+msgstr "Accounted"
+
+#. module: stock_customer_reservation_cash
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#. module: stock_customer_reservation_cash
+msgid "Refunded"
+msgstr "Refunded"
+
+#. module: stock_customer_reservation_cash
+msgid "None"
+msgstr "None"
+
+#. module: stock_customer_reservation_cash
+msgid "Reserved"
+msgstr "Reserved"
+
+#. module: stock_customer_reservation_cash
+msgid "Immediate"
+msgstr "Immediate"
+
+#. module: stock_customer_reservation_cash
+msgid "Needs Clearance"
+msgstr "Needs Clearance"
+
+#. module: stock_customer_reservation_cash
+msgid "The code must be unique per company."
+msgstr "The code must be unique per company."
+
+#. module: stock_customer_reservation_cash
+msgid "Amount must be strictly positive."
+msgstr "Amount must be strictly positive."
+
+#. module: stock_customer_reservation_cash
+msgid "Critical fields are locked after confirmation."
+msgstr "Critical fields are locked after confirmation."
+
+#. module: stock_customer_reservation_cash
+msgid "Only confirmed cash collections can be marked to account."
+msgstr "Only confirmed cash collections can be marked to account."
+
+#. module: stock_customer_reservation_cash
+msgid "Cannot cancel a cash collection already accounted."
+msgstr "Cannot cancel a cash collection already accounted."
+
+#. module: stock_customer_reservation_cash
+msgid "Cannot reset to draft a cash collection already accounted."
+msgstr "Cannot reset to draft a cash collection already accounted."
+
+#. module: stock_customer_reservation_cash
+msgid "Only a manager can account a cash collection."
+msgstr "Only a manager can account a cash collection."
+
+#. module: stock_customer_reservation_cash
+msgid "Customers"
+msgstr "Customers"
+
+#. module: stock_customer_reservation_cash
+msgid "State must be 'To Account'."
+msgstr "State must be 'To Account'."
+
+#. module: stock_customer_reservation_cash
+msgid "This cash collection is already accounted."
+msgstr "This cash collection is already accounted."
+
+#. module: stock_customer_reservation_cash
+msgid "Set a payment mode before accounting."
+msgstr "Set a payment mode before accounting."
+
+#. module: stock_customer_reservation_cash
+msgid "Set a journal on the payment mode."
+msgstr "Set a journal on the payment mode."
+
+#. module: stock_customer_reservation_cash
+msgid "No inbound payment method is configured on the journal."
+msgstr "No inbound payment method is configured on the journal."
+
+#. module: stock_customer_reservation_cash
+msgid "The payment journal has no configured cash account. Set a default account on the journal."
+msgstr "The payment journal has no configured cash account. Set a default account on the journal."
+
+#. module: stock_customer_reservation_cash
+msgid "Incomplete accounting configuration: missing customer or journal account."
+msgstr "Incomplete accounting configuration: missing customer or journal account."
+
+#. module: stock_customer_reservation_cash
+msgid "Automatic accounting failed: %s"
+msgstr "Automatic accounting failed: %s"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation is only possible on a draft or sent quotation."
+msgstr "Reservation is only possible on a draft or sent quotation."
+
+#. module: stock_customer_reservation_cash
+msgid "Add at least one line to the quotation before reserving."
+msgstr "Add at least one line to the quotation before reserving."
+
+#. module: stock_customer_reservation_cash
+msgid "No warehouse found for the quotation company."
+msgstr "No warehouse found for the quotation company."
+
+#. module: stock_customer_reservation_cash
+msgid "Configure the reservation parent location on the warehouse."
+msgstr "Configure the reservation parent location on the warehouse."
+
+#. module: stock_customer_reservation_cash
+msgid "No internal transfer type configured on the warehouse."
+msgstr "No internal transfer type configured on the warehouse."
+
+#. module: stock_customer_reservation_cash
+msgid "No internal source location found for reservation."
+msgstr "No internal source location found for reservation."
+
+#. module: stock_customer_reservation_cash
+msgid "No internal transfer type found to cancel the reservation."
+msgstr "No internal transfer type found to cancel the reservation."
+
+#. module: stock_customer_reservation_cash
+msgid "Source/destination locations not found on the reservation transfer."
+msgstr "Source/destination locations not found on the reservation transfer."
+
+#. module: stock_customer_reservation_cash
+msgid "An active reservation is required to collect cash from the quotation."
+msgstr "An active reservation is required to collect cash from the quotation."
+
+#. module: stock_customer_reservation_cash
+msgid "Select a contact when 'Invoice to another contact' is checked."
+msgstr "Select a contact when 'Invoice to another contact' is checked."
+
+#. module: stock_customer_reservation_cash
+msgid "Backorder created on the new sales order %s."
+msgstr "Backorder created on the new sales order %s."
+
+#. module: stock_customer_reservation_cash
+msgid "Sales order created from backorder of %s."
+msgstr "Sales order created from backorder of %s."
+
+#. module: stock_customer_reservation_cash
+msgid "Reservations Clients"
+msgstr "Customer Reservations"
+
+#. module: stock_customer_reservation_cash
+msgid "Encaissements"
+msgstr "Cash Collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Modes de paiement"
+msgstr "Payment Modes"
+
+#. module: stock_customer_reservation_cash
+msgid "Chèque/LCN"
+msgstr "Cheque/LCN"
+
+#. module: stock_customer_reservation_cash
+msgid "Date Chèque/LCN"
+msgstr "Cheque/LCN Date"
+
+#. module: stock_customer_reservation_cash
+msgid "Émetteur"
+msgstr "Issuer"
+
+#. module: stock_customer_reservation_cash
+msgid "Date d'échéance Chèque/LCN"
+msgstr "Cheque/LCN Due Date"
+
+#. module: stock_customer_reservation_cash
+msgid "N° Chèque/LCN"
+msgstr "Cheque/LCN Number"
+
+#. module: stock_customer_reservation_cash
+msgid "Cheque/LCN details are required: Date, Issuer, Due Date and Number."
+msgstr "Cheque/LCN details are required: Date, Issuer, Due Date and Number."
+
+#. module: stock_customer_reservation_cash
+msgid "Cheque/LCN details are required: Date, Issuer and Number."
+msgstr "Cheque/LCN details are required: Date, Issuer and Number."
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Source Location"
+msgstr "Reservation Source Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Set the reservation source location on the quotation."
+msgstr "Set the reservation source location on the quotation."
+
+#. module: stock_customer_reservation_cash
+msgid "The reservation source location must belong to the quotation company."
+msgstr "The reservation source location must belong to the quotation company."
+
+#. module: stock_customer_reservation_cash
+msgid "The reservation source location must belong to the selected warehouse."
+msgstr "The reservation source location must belong to the selected warehouse."
+
+#. module: stock_customer_reservation_cash
+msgid "Emplacement d'origine de réservation"
+msgstr "Reservation Source Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Warehouse Root Location"
+msgstr "Warehouse Root Location"
+
+#. module: stock_customer_reservation_cash
+msgid "Reservation Transfers"
+msgstr "Reservation Transfers"
+
+#. module: stock_customer_reservation_cash
+msgid "Transferts de réservation"
+msgstr "Reservation Transfers"
+
+#. module: stock_customer_reservation_cash
+msgid "Total cash collections excluding New and Cancelled cannot exceed the quotation total."
+msgstr "Total cash collections excluding New and Cancelled cannot exceed the quotation total."
+
+#. module: stock_customer_reservation_cash
+msgid "Cancellation and Cash Collections"
+msgstr "Cancellation and Cash Collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Sale Cancel Reservation Cash Wizard"
+msgstr "Sale Cancel Reservation Cash Wizard"
+
+#. module: stock_customer_reservation_cash
+msgid "Orders"
+msgstr "Orders"
+
+#. module: stock_customer_reservation_cash
+msgid "Decision"
+msgstr "Decision"
+
+#. module: stock_customer_reservation_cash
+msgid "Target reservation"
+msgstr "Target reservation"
+
+#. module: stock_customer_reservation_cash
+msgid "Target quotation/order"
+msgstr "Target quotation/order"
+
+#. module: stock_customer_reservation_cash
+msgid "Cancel non-accounted cash collections"
+msgstr "Cancel non-accounted cash collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Do not change cash collections"
+msgstr "Do not change cash collections"
+
+#. module: stock_customer_reservation_cash
+msgid "Relink cash collections to another reservation/order"
+msgstr "Relink cash collections to another reservation/order"
+
+#. module: stock_customer_reservation_cash
+msgid "Select a target reservation or a target quotation/order."
+msgstr "Select a target reservation or a target quotation/order."
+
+#. module: stock_customer_reservation_cash
+msgid "Some cash collections are already accounted/refunded and cannot be cancelled. Choose another decision."
+msgstr "Some cash collections are already accounted/refunded and cannot be cancelled. Choose another decision."
+
+#. module: stock_customer_reservation_cash
+msgid "Target reservation must be different from the cancelled reservations."
+msgstr "Target reservation must be different from the cancelled reservations."
+
+#. module: stock_customer_reservation_cash
+msgid "No return lines are available for this reservation transfer."
+msgstr "No return lines are available for this reservation transfer."
